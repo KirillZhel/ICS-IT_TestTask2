@@ -11,5 +11,5 @@ BEGIN
 				COUNT(inserted.id_sku) AS c 
 			FROM inserted 
 			GROUP BY id_sku) AS mi
-	WHERE mi.i = dbo.[Basket].[id_sku]
+	WHERE mi.i = dbo.[Basket].id_sku
 END;
